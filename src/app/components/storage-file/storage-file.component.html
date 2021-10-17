@@ -1,0 +1,17 @@
+<div class="file">
+  <div class="icon">
+    <fa-icon [icon]="faFileAlt"></fa-icon>
+  </div>
+  <div class="filename">
+    <p>{{ file.filename }}</p>
+  </div>
+  <div class="last_modified">
+    <p>{{ lastModified }}</p>
+  </div>
+  <div class="size">
+    <p>{{ size }}</p>
+  </div>
+  <div class="delete" (click)="onClick()">
+    <fa-icon [icon]="faTrashAlt"></fa-icon>
+  </div>
+</div>

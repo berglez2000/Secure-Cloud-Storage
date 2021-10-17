@@ -1,0 +1,78 @@
+.bucket-storage {
+  padding: 30px;
+}
+
+app-bucket-item-storage {
+  transition: all 0.3s ease;
+}
+
+.pagination {
+  display: flex;
+}
+
+.pagination > div {
+  padding: 15px;
+}
+
+.pagination > div.closed {
+  background-color: rgb(241, 70, 70);
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.files {
+  padding-left: 15px;
+  border-top: 1px solid lightgray;
+}
+
+.files .upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.files .upper .right {
+  display: flex;
+  align-items: center;
+  padding-top: 8px;
+}
+
+app-button {
+  margin-right: 10px;
+}
+
+.files_listed .nav {
+  display: flex;
+  margin-top: 20px;
+  background-color: lightgrey;
+  padding: 5px 0;
+}
+
+.files_listed .nav > div {
+  display: flex;
+}
+
+.files_listed .nav .empty_div {
+  width: 10%;
+}
+
+.files_listed .nav .name {
+  width: 50%;
+}
+
+.files_listed .nav .last_modified,
+.files_listed .nav .size {
+  width: 20%;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-top: 1px solid lightgray;
+}
+
+.details p {
+  padding: 5px 0;
+}

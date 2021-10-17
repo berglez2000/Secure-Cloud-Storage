@@ -1,0 +1,37 @@
+form {
+  background-color: #fff;
+  padding: 20px;
+}
+
+h4 {
+  padding: 20px;
+}
+
+.add-bucket form .upper {
+  display: flex;
+}
+
+.add-bucket form .upper .field {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.add-bucket form .upper .field:first-child {
+  padding-right: 20px;
+}
+
+.add-bucket form .upper .field:last-child {
+  padding-left: 20px;
+}
+
+.add-bucket form .upper .field input,
+select,
+option {
+  padding: 5px 10px;
+  outline: none;
+}
+
+.btn {
+  margin-top: 20px;
+}

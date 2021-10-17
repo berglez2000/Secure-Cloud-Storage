@@ -1,0 +1,65 @@
+<div class="bucket-storage" *ngIf="bucket.show_storage">
+  <div class="pagination">
+    <div
+      class="files-page {{ showDetails == true ? 'closed' : '' }}"
+      (click)="openFiles()"
+    >
+      <h5>Files</h5>
+    </div>
+    <div
+      class="details-page {{ showDetails == false ? 'closed' : '' }}"
+      (click)="openDetails()"
+    >
+      <h5>Details</h5>
+    </div>
+  </div>
+  <div class="files" *ngIf="showDetails == false">
+    <div class="upper">
+      <p>{{ filesLen }}</p>
+      <div class="right">
+        <div>
+          <label for="files" class="btn">Upload</label>
+          <input
+            id="files"
+            style="visibility: hidden; display: none"
+            type="file"
+            (change)="onFileUpload($event)"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="files_listed" *ngIf="showFiles">
+      <div class="nav">
+        <div class="empty_div"></div>
+        <div class="name">
+          <p>Name</p>
+        </div>
+        <div class="last_modified">
+          <p>Last modified</p>
+        </div>
+        <div class="size">
+          <p>Size</p>
+        </div>
+      </div>
+      <div class="all_files">
+        <app-storage-file
+          *ngFor="let file of files"
+          [file]="file"
+          (onFileDelete)="onDeleteFile(file)"
+        ></app-storage-file>
+      </div>
+    </div>
+  </div>
+  <div class="details" *ngIf="showDetails">
+    <div class="left">
+      <p>Bucket name: {{ bucket.name }}</p>
+      <p>Location: {{ bucket.location }}</p>
+    </div>
+    <div class="right">
+      <app-button
+        text="Delete Bucket"
+        (btnClick)="onDeleteBucket()"
+      ></app-button>
+    </div>
+  </div>
+</div>

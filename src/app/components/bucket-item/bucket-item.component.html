@@ -1,0 +1,9 @@
+<div (dblclick)="onDoubleClick()" class="bucket">
+  <div class="left">
+    <p>{{ bucket.name }}</p>
+  </div>
+  <div class="right">
+    <p>{{ bucket.location }}</p>
+  </div>
+</div>
+<app-bucket-item-storage [bucket]="bucket"></app-bucket-item-storage>

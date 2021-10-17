@@ -1,0 +1,40 @@
+.file {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+.file.selected {
+  background-color: rgb(255, 112, 112);
+}
+
+.file > div {
+  display: flex;
+}
+
+.file .icon {
+  width: 10%;
+  justify-content: center;
+}
+
+.file .icon fa-icon {
+  font-size: 30px;
+}
+
+.file .filename {
+  width: 50%;
+}
+
+.file .last_modified {
+  width: 20%;
+}
+
+.file .size {
+  width: 15%;
+}
+
+.file .delete {
+  width: 5%;
+  cursor: pointer;
+}

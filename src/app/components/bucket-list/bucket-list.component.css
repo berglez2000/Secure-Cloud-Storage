@@ -1,0 +1,39 @@
+.bucket-list {
+  padding: 40px 0;
+}
+
+h1 {
+  padding: 20px 0;
+}
+
+.box {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.box .upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.box .list .header {
+  display: flex;
+  align-items: center;
+  background-color: #969696;
+  border: 1px solid #000;
+}
+
+.box .list .header h3 {
+  display: flex;
+  padding: 5px 10px;
+}
+
+.box .list .header h3:first-child {
+  width: 65%;
+}
+
+.box .list .header h3:last-child {
+  width: 35%;
+}

@@ -1,0 +1,74 @@
+{
+  "buckets": [
+    {
+      "id": 1,
+      "name": "Best Storage",
+      "location": "Ljubljana",
+      "show_storage": false,
+      "files": [
+        {
+          "id": 1,
+          "filename": "FileName01",
+          "last_modified": "5.1.2021",
+          "size": "1MB"
+        },
+        {
+          "id": 2,
+          "filename": "FileName02",
+          "last_modified": "10.1.2021",
+          "size": "300KB"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Pics",
+      "location": "Ljubljana",
+      "show_storage": false,
+      "files": [
+        {
+          "id": 1,
+          "filename": "FileName01",
+          "last_modified": "5.1.2021",
+          "size": "1MB"
+        },
+        {
+          "id": 2,
+          "filename": "FileName02",
+          "last_modified": "10.1.2021",
+          "size": "300KB"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "bucket_id": 1,
+      "last_modified": 1634105205781,
+      "filename": "Resume.pdf",
+      "size": 1363693,
+      "id": 6
+    },
+    {
+      "bucket_id": 1,
+      "last_modified": 1633945923385,
+      "filename": "Primer_Darilo.pdf",
+      "size": 526454,
+      "id": 7
+    },
+    {
+      "bucket_id": 2,
+      "last_modified": 1633696145617,
+      "filename": "Desktop.jpg",
+      "size": 266848,
+      "id": 8
+    },
+    {
+      "bucket_id": 2,
+      "last_modified": 1633691912301,
+      "filename": "header_logo.png",
+      "size": 3515,
+      "id": 9
+    }
+  ]
+}

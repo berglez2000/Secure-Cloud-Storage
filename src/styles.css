@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(214, 214, 214);
+  font-family: sans-serif;
+}
+
+.wrap {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1280px) {
+  .wrap {
+    padding: 0 40px;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  background-color: #31bfee;
+  padding: 8px 16px;
+  outline: none;
+  border: none;
+  font-weight: 600;
+}
